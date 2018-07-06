@@ -153,7 +153,7 @@ type CreateCoupon struct {
 }
 
 type RedeemCoupon struct {
-	CouponAmount   string             `json:"couponAmount"`
+	CouponAmount   float64            `json:"couponAmount"`
 	CouponCurrency string             `json:"couponCurrency"`
 	TransactionID  int                `json:"transID"`
 	Funds          map[string]float64 `json:"funds"`
